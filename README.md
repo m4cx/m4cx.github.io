@@ -1,37 +1,75 @@
-## Welcome to GitHub Pages
+# Nuxt Content Starter
 
-You can use the [editor on GitHub](https://github.com/m4cx/m4cx.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Look at the [Nuxt Content documentation](https://content.nuxt.com) to learn more.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Setup
 
-### Markdown
+Make sure to install dependencies:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```bash
+# npm
+npm install
 
-```markdown
-Syntax highlighted code block
+# pnpm
+pnpm install
 
-# Header 1
-## Header 2
-### Header 3
+# yarn
+yarn install
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# bun
+bun install
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Development Server
 
-### Jekyll Themes
+Start the development server on `http://localhost:3000`:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/m4cx/m4cx.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+# npm
+npm run dev
 
-### Support or Contact
+# pnpm
+pnpm dev
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

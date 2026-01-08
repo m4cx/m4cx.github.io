@@ -1,0 +1,25 @@
+{
+  "name": "m4cx-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.10.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "better-sqlite3": "^12.5.0",
+    "nuxt": "^4.2.2",
+    "sqlite3": "^5.1.7",
+    "tailwindcss": "^4.1.18",
+    "vite-tsconfig-paths": "^6.0.3"
+  },
+  "packageManager": "pnpm@10.27.0+sha512.72d699da16b1179c14ba9e64dc71c9a40988cbdc65c264cb0e489db7de917f20dcf4d64d8723625f2969ba52d4b7e2a1170682d9ac2a5dcaeaab732b7e16f04a",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "zod": "^4.3.5"
+  }
+}
