@@ -46,7 +46,7 @@ const isHome = computed(() => route.path === "/");
     <div
       class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 lg:px-6"
     >
-      <NuxtLink to="/" class="group flex items-center gap-3 text-left">
+      <NuxtLink to="/" class="group flex items-center gap-3 text-left rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-all">
         <div class="oct-badge bg-accent/15 text-accent ring-1 ring-accent/50">
           <span class="font-semibold">M4</span>
         </div>
