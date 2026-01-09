@@ -30,7 +30,7 @@ const topicItems = computed(() =>
     </div>
 
     <div
-      class="relative grid gap-10 px-6 py-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-14"
+      class="relative px-6 py-10 lg:px-12 lg:py-14"
     >
       <div class="space-y-4">
         <p
