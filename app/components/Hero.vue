@@ -22,7 +22,7 @@ const topicItems = computed(() =>
     class="relative overflow-hidden rounded-3xl border border-subtle/70 bg-panel/90 shadow-2xl backdrop-blur-lg"
   >
     <div
-      class="pointer-events-none absolute inset-0 mix-blend-lighten opacity-60"
+      class="pointer-events-none absolute inset-0 mix-blend-overlay opacity-60"
     >
       <div class="oct-grid"></div>
       <div class="oct-glow top-[-4rem] left-[-4rem]"></div>
