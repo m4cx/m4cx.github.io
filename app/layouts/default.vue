@@ -8,14 +8,14 @@ type Theme = "light" | "dark";
 const theme = useState<Theme>("theme", () => "light");
 
 const applyTheme = (value: Theme) => {
-  if (!process.client) return;
+  if (!import.meta.client) return;
   const root = document.documentElement;
   root.classList.toggle("dark", value === "dark");
   localStorage.setItem("theme", value);
 };
 
 onMounted(() => {
-  if (!process.client) return;
+  if (!import.meta.client) return;
 
   const stored = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
