@@ -84,8 +84,8 @@ const isHome = computed(() => route.path === "/");
 
   <main class="relative z-10">
     <section
+      v-if="isHome"
       class="mx-auto max-w-6xl px-4 pb-10 pt-10 lg:px-6 lg:pt-16"
-      :class="{ 'pb-6': !isHome }"
     >
       <Hero
         eyebrow="m4cx.github.io"
