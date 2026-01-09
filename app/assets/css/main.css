@@ -80,7 +80,7 @@ body {
 
 .btn-ghost:focus-visible {
 	outline: none;
-	box-shadow: 0 0 0 2px color-mix(in srgb, var(--panel) 100%, transparent), 0 0 0 4px var(--accent-strong);
+	box-shadow: 0 0 0 2px var(--panel), 0 0 0 4px var(--accent-strong);
 }
 
 .nav-link {
