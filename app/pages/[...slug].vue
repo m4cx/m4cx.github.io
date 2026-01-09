@@ -15,7 +15,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <div class="prose lg:prose-xl mx-auto">
+  <article class="prose prose-lg mx-auto max-w-4xl text-foreground dark:prose-invert">
     <ContentRenderer v-if="page" :value="page" />
-  </div>
+  </article>
 </template>
