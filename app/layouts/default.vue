@@ -63,7 +63,7 @@ const isHome = computed(() => route.path === "/");
       <div class="flex items-center gap-3">
         <button
           type="button"
-          class="btn-ghost flex items-center gap-2 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-panel"
+          class="btn-ghost flex items-center gap-2"
           aria-label="Toggle theme"
           @click="toggleTheme"
         >
