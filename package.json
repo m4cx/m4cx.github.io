@@ -9,9 +9,11 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@fontsource-variable/space-grotesk": "^5.2.10",
     "@nuxt/content": "^3.10.0",
     "@tailwindcss/vite": "^4.1.18",
     "better-sqlite3": "^12.5.0",
+    "lucide-vue-next": "^0.423.0",
     "nuxt": "^4.2.2",
     "sqlite3": "^5.1.7",
     "tailwindcss": "^4.1.18",
