@@ -46,7 +46,10 @@ const isHome = computed(() => route.path === "/");
     <div
       class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 lg:px-6"
     >
-      <NuxtLink to="/" class="group flex items-center gap-3 text-left rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-all">
+      <NuxtLink
+        to="/"
+        class="group flex items-center gap-3 text-left rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-all"
+      >
         <div class="oct-badge bg-accent/15 text-accent ring-1 ring-accent/50">
           <span class="font-semibold">M4</span>
         </div>
@@ -73,40 +76,16 @@ const isHome = computed(() => route.path === "/");
             <Sun v-if="theme === 'light'" class="h-5 w-5 text-accent" />
             <Moon v-else class="h-5 w-5 text-accent" />
           </span>
-          <span
-            class="hidden text-sm font-medium text-foreground md:inline"
-            >{{ theme === "dark" ? "Dark" : "Light" }}</span
-          >
+          <span class="hidden text-sm font-medium text-foreground md:inline">{{
+            theme === "dark" ? "Dark" : "Light"
+          }}</span>
         </button>
       </div>
     </div>
   </header>
 
   <main class="relative z-10">
-    <section
-      v-if="isHome"
-      class="mx-auto max-w-6xl px-4 pb-10 pt-10 lg:px-6 lg:pt-16"
-    >
-      <Hero
-        eyebrow="m4cx.github.io"
-        subtitle="Projects | Blog | Talks"
-        title="One place for projects, writing, and talks"
-        description="Software development, architecture, .NET, web, and AI — with links to code, slides, videos, and demos."
-        topics="Software development, Software architecture, .NET, Web, AI"
-      />
-    </section>
-
-    <section class="mx-auto max-w-6xl px-4 pb-20 lg:px-6">
-      <div
-        class="rounded-3xl border border-subtle/70 bg-panel/90 shadow-xl backdrop-blur-lg"
-      >
-        <div class="relative px-6 py-8 lg:px-12 lg:py-12">
-          <div class="relative">
-            <slot />
-          </div>
-        </div>
-      </div>
-    </section>
+    <slot />
   </main>
 
   <footer

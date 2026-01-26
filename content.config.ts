@@ -15,5 +15,21 @@ export default defineContentConfig({
       type: "page",
       source: "**",
     }),
-  },
+    pagesContent: defineCollection({
+      type: "page",
+      source: "pages-content/**",
+    }),
+    projects: defineCollection({
+      type: "page",
+      source: "projects/**",
+      schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        githubUrl: z.string().optional(),
+        date: z.string().refine((date) => !isNaN(Date.parse(date)), {
+          message: "Invalid date format",
+        }),
+    }),
+    }),
+  },  
 });
